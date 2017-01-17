@@ -2080,6 +2080,10 @@ fd_reify (EV_P)
         {
           SOCKET handle = EV_FD_TO_WIN32_HANDLE (fd);
 
+          if (handle == -1 && errno == EBADF) {
+            handle = fd;
+          }
+
           if (handle != anfd->handle)
             {
               unsigned long arg;
