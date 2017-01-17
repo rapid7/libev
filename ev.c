@@ -90,13 +90,8 @@
 #   define EV_USE_NANOSLEEP 0
 # endif
 
-# if HAVE_SELECT && HAVE_SYS_SELECT_H
-#  ifndef EV_USE_SELECT
-#   define EV_USE_SELECT EV_FEATURE_BACKENDS
-#  endif
-# else
-#  undef EV_USE_SELECT
-#  define EV_USE_SELECT 0
+# ifndef EV_USE_SELECT
+#  define EV_USE_SELECT EV_FEATURE_BACKENDS
 # endif
 
 # if HAVE_POLL && HAVE_POLL_H
