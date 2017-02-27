@@ -1,4 +1,4 @@
-AC_INIT([libev], [4.22])
+AC_INIT([libev], [4.24])
 
 AC_CONFIG_SRCDIR([ev_epoll.c])
 
