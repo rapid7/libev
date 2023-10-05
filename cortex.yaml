@@ -1,0 +1,15 @@
+---
+info:
+  title: Libev
+  description: Full-featured high-performance event loop loosely modelled after libevent
+  x-cortex-git:
+    github:
+      alias: r7org
+      repository: rapid7/libev
+  x-cortex-tag: libev
+  x-cortex-type: service
+  x-cortex-domain-parents:
+  - tag: metasploit
+openapi: 3.0.1
+servers:
+- url: "/"
